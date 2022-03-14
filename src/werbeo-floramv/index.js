@@ -1,5 +1,4 @@
 import { initialize, getRawData } from "./connection";
-// import { getData } from "./testing/connection";
 import { convertToOccurrenceData } from "./convert";
 
 export default {
