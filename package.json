@@ -1,6 +1,6 @@
 {
   "name": "@floralink/plugins",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Plugin library for using local databases and APIs as data sources with Floralink Core",
   "author": "Vincent Ruge",
   "license": "MIT",
