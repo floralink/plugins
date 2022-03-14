@@ -69,7 +69,7 @@ README.md
 
 ## index.js
 
-example index.js ([Ellenberg plugin](./taxonspecific/../ellenberg/index.js)):
+Example index.js ([Ellenberg plugin](./src/ellenberg/index.js)):
 
 ```javascript
 export default {
