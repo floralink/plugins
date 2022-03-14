@@ -23,8 +23,8 @@ export default {
   sourceType: "local",
   name: "ellenberg",
   version: "1991-1",
-  taxonReferencePlugin: {
-    name: "germansl",
+  taxonReference: {
+    id: "germansl",
     version: "1.5.1",
   },
   title: "Ökologische Zeigerwerte",
@@ -33,7 +33,7 @@ export default {
   sources: {
     primary: {
       citation:
-        "Ellenberg, H. (1991): Zeigerwerte der Gefäßpflanzen (ohne Rubus). In: Ellenberg, H.; Weber, H. E.; Düll, R.; Wirth, V.; Werner, W.; Paulissen, D.: Zeigerwerte von Pflanzen in Mitteleuropa. - Scripta geobotanica 18: 9-166.",
+        "Ellenberg, H. (1991): Zeigerwerte von Pflanzen in Mitteleuropa, Scripta geobotanica 18: 9-166. Goltze: Göttingen.",
       citationShort: "Ellenberg 1991",
     },
     secondary: {

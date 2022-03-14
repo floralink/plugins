@@ -18,20 +18,20 @@ import { ellenberg } from "@floralink/plugins";
 
 # Data source
 
-The plugin's database is generated from GermanSL (version 1.5.1), specifically the `ecodbase.dbf` file.
-
-## Citation
+The plugin's database is generated from GermanSL (version 1.5.1), specifically the `ecodbase.dbf` file. GermanSL is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 > Jansen, F. & Dengler, J. (2008): GermanSL - eine universelle taxonomische Referenzliste für Vegetationsdatenbanken. Tuexenia 28: 239–253. [Online version (in German)](https://germansl.infinitenature.org/pdf/Jansen,%20Dengler%20-%20Tuexenia%2028.pdf)
 
-## Data generation
+The data in GermanSL stems from Ellenberg 1991:
+
+> Ellenberg, H. (1991): Zeigerwerte von Pflanzen in Mitteleuropa, Scripta geobotanica 18: 9-166. Goltze: Göttingen.
 
 The original dBASE (.dbf) file was pre-processed by saving it as an semicolon-delimited CSV with LibreOffice (v7.2.2.2).
 
 The CSV file is then mapped to JSON with [@floralink/generator](https://www.github.com/floralink/generator) and a custom descriptive `mapping.js` module.
 
 ```shell
-$ npx floralinkgen -i ecodbase.csv -d ";"
+$ npx flgen -i source/ecodbase.csv -o ../database.json -d ";"
 ```
 
 ## Please note
@@ -45,6 +45,6 @@ In case
 - there is nothing else specified in the comment field
 - and "0" is not a possible enumeration of that field (that's the case for the salt indicator)
 
-`the mapping.js` module converts that to an "x", since this seems to be the right case.
+The `mapping.js` module converts that to an "x", since this seems to be the right case.
 
-If all entries for the indicator values are set as "0" (this seems to be the case when there are no indicator values described for that taxon), the entry will be omitted. (IMPLEMENT THIS!)
+There also is an unresolved issue which leads to 11 entries being omitted.

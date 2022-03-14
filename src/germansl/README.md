@@ -18,9 +18,7 @@ import { germansl } from "@floralink/plugins";
 
 # Data source
 
-The plugin's database is generated from GermanSL (version 1.5.1), specifically the `germansl.sqlite` file.
-
-## Citation
+The plugin's database is generated from GermanSL (version 1.5.1), specifically the `germansl.sqlite` file. GermanSL is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 > Jansen, F. & Dengler, J. (2008): GermanSL - eine universelle taxonomische Referenzliste für Vegetationsdatenbanken. Tuexenia 28: 239–253. [Online version (in German)](https://germansl.infinitenature.org/pdf/Jansen,%20Dengler%20-%20Tuexenia%2028.pdf)
 
@@ -40,5 +38,5 @@ sqlite> .quit
 The generated CSV is then mapped to JSON with [@floralink/generator](https://www.github.com/floralink/generator) and a custom descriptive `mapping.js` module.
 
 ```shell
-$ npx floralinkgen -i germansl.csv
+$ npx floralinkgen -i source/germansl.csv -o ../database.json -d ";"
 ```

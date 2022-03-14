@@ -4,7 +4,7 @@
   "description": "Plugin library for using local databases and APIs as data sources with Floralink Core",
   "author": "Vincent Ruge",
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "lint": "eslint . --fix",
@@ -14,7 +14,7 @@
     "axios": "^0.26.0"
   },
   "devDependencies": {
-    "@floralink/generator": "^1.0.0",
+    "@floralink/generator": "^1.1.1",
     "eslint": "8.9.0"
   }
 }

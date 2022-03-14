@@ -1,0 +1,51 @@
+##################################################################################################
+## Metadateninformation zu den Angaben in FSK_2007 und Flora_2007
+## Liste sämtlicher Arten der Flora des Landes Mecklenburg-Vorpommern auf (Quelle : FUKAREK, F. & HENKER, H. (2006):  Flora von Mecklenburg-Vorpommern – Farn- und Blütenpflanzen, Hrsg. von HENKER, H. & BERG, CH., Weissdorn-Verlag Jena, 428 S. )		
+
+## Arbeitstabelle zum Gutachten
+## Florenschutzkonzept Mecklenburg-Vorpommern:
+## Litterski, B., Berg, C., Müller, D. (2006): Analyse landesweiter Artendaten (§ 20 – Biotopkartierung) zur Erstellung von Flächenkulissen für die FFH-Management- und die Gutachtliche Landschaftsrahmenplanung. Gutachten im Auftrag des Umweltministeriums Mecklenburg-Vorpommern: 48 S., Schwerin. 2007 veröffentlicht auf http://www.lung.mv-regierung.de/insite/cms/umwelt/natur.htm, Erläuterungen vgl. Gutachten, Tab. 12, S. 23f
+
+# verantwortlich für die Zusammenstellung:
+# LUNG Güstrow, Anja Abdank (anja.abdank@lung.mv-regierung.de)
+
+# Spaltenname	Klartext/Erläuterung	Quelle (vgl. Quellenverzeichnis in LITTERSKI et al. 2006)	Erläuterung
+Taxname	Nomenklatur	GermanSL 1.2
+## Status, Gefährdung, Schutz 
+STATUS_D	Status 	nach WISSKIRCHEN (1998)
+N	Grad der Naturalisation 	FUKAREK & HENKER (2006) 	Arten  mit N3, F4 nicht verglichen
+F	Einwanderungsform 	FUKAREK & HENKER (2006) 	Arten  mit N3, F4 nicht verglichen
+T	Einwanderungszeit 	FUKAREK & HENKER (2006) 
+AR	Areal 	FUKAREK & HENKER (2006) 
+HEIMAT	Heimat 	FUKAREK & HENKER (2006) 
+HÄUFIGK	Häufigkeit	FUKAREK & HENKER (2006) 
+GEF2006	Gefährdungskategorie 2006	FUKAREK & HENKER (2006) aus VOIGTLÄNDER & HENKER 2005: 0=ausgestorben oder verschollen, 1=vom Aussterben bedroht, 2=stark gefährdet, 3=gefährdet, R=extrem selten, G= Gefährdung anzunehmen, V=zurückgehend, *=derzeit nicht gefährdet, **=ungefährdet, D=Datenlage mangelhaft
+GEF1991	Gefährdungskategorie 1991	FUKAREK & HENKER (2006) aus FUKAREK (1991) 
+RLBALT	Rote Liste Baltikum 1993	für FSK-Arten	INGELÖG (1993) 
+RLD	Rote Liste Deutschland 	für FSK-Arten	Bundesamt für Naturschutz (KORNECK et al.1996) 
+FFH_Anh	FFH-Anhänge II, IV, V	EU-Fauna-Flora-Habitat (FFH)-Richtlinie 
+BARTSCH	BArtSchVO CITES	BArtSchVO- Bundesartenschutzverordnung vom 16.02.2005	 C = Arten der CITES-Verordnung (EG-VO 338/97)	§ besonders geschützte, §§ streng geschützte Arten x
+TAX_Ind	TAX-Index 	für FSK-Arten	nach WELK (2001a)
+TAX_Bew	TAX-Bewertung: Abstufung des TAX-Index	für FSK-Arten	nach WELK (2001a)
+## Analysen Biotope und Maßnahmen
+RLPGMV	Rote Liste Pflanzengesellschaften MV	für FSK-Arten	Pflanzensoziologische Zuordnung nach BERG et al. (2001)
+FFH1	FFH-Steckbriefe 1	für FSK-Arten	Lebensraumtyp nach Steckbrief, LUNG (2006a), Stand 10.2006
+FFH2	FFH-Steckbriefe 2	für FSK-Arten	Lebensraumtyp nach Steckbrief, LUNG (2006a), Stand 10.2006
+FFH3	FFH-Steckbriefe 3	für FSK-Arten	Lebensraumtyp nach Steckbrief, LUNG (2006a), Stand 10.2006
+FFH4	FFH-Steckbriefe 4	für FSK-Arten	Lebensraumtyp nach Steckbrief, LUNG (2006a), Stand 10.2006
+FFH_FSP_1	FFH FSP 1	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Vorschlag für (weitere) Lebensraumtypen
+FFH_FSP_2	FFH FSP 2	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Vorschlag für (weitere) Lebensraumtypen
+BIOTOP	In Biotopkartieranleitung erwähnt	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	xx = besonders charakteristische Art für mindestens ein Biotop, x = charakteristische Art, kein Eintrag = Art fehlt in der Kartieranleitung
+BioNr	Biotoptyp Nr.	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Nummer des Biotoptyps nach Kartieranleitung (im Falle, dass die Art nicht in der Biotopkartieranleitung erwähnt ist, gemäß eigenem Vorschlag)
+BioCode	Biotoptyp Code	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Buchstabencode nach Kartieranleitung (im Falle, dass die Art nicht in der Biotopkartieranleitung erwähnt ist, gemäß eigenem Vorschlag)
+BioName	Biotoptyp Name	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Verbale Bezeichnung des Biotops nach Kartieranleitung
+Para20	§ 20	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	§ 20 = Biotop ist immer auch gesetzlich geschützt	 (§20) = Biotop ist unter gewissen Umständen (z. B. Geomorphologie) ein geschütztes Biotop
+StandCode	Code entsprechend Standard-Biotoptypenliste	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Code entsprechend der EUNIS Standard-Biotoptypenliste
+BioTyp1	Biotop- und Nutzungstypen	für FSK-Arten	nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Abkürzung aus der Biotop- und Nutzungstypen-Kartierung
+BioTyp2	Weitere Biotop- und Nutzungstypen (Kartieranleitung)	für FSK-Arten	bei Arten mit mehreren Erwähnungen, nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Aufzählung aller weiteren in der Kartieranleitung verzeichneten Biotoptypen, für die die Art charakteristisch (oder besonders charakteristisch) ist.
+BioTyp3	Weitere Biotop- und Nutzungstypen (Vorschlag FSK)	für FSK-Arten	neue oder weitere Vorschläge für charakteristische Arten, nach Biotopkartieranleitung, LUNG (2006b), Stand 10.2006	Vorschlag eigener (oder weiterer) Biotoptypen, für welche die Art charakteristisch ist
+HLRT_WM	Hauptlebensraumtyp des GLRP West-Mecklenburg	für FSK-Arten	nach UM 2007: GLRP (Gutachtl. Landschaftsrahmenplan Westmecklenburg)
+Massn1	Maßnahme 1	für FSK-Arten	Schutzmaßnahmen nach GLRP (Gutachtl. Landschaftsrahmenplan)
+Massn2	Maßnahme 2	für FSK-Arten	Schutzmaßnahmen nach GLRP (Gutachtl. Landschaftsrahmenplan)
+Massn3	Maßnahme 3	für FSK-Arten	Schutzmaßnahmen nach GLRP (Gutachtl. Landschaftsrahmenplan)
+Instrument	Instrumente	für FSK-Arten	Mögliche Instrumente des Naturschutzes für den Schutz der Art 

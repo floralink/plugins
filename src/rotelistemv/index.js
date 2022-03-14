@@ -5,7 +5,7 @@ export default {
   sourceType: "local",
   name: "rotelistemv",
   version: "2005-1",
-  taxonReferencePlugin: {
+  taxonReference: {
     name: "germansl",
     version: "1.5.1",
   },

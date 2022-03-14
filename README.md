@@ -28,27 +28,27 @@ const myTaxonData = floralink.getTaxonDataByID(taxonIDs, "myplugin");
 
 ## Taxon reference data
 
-| Name     | Data origin | Data source                                                                                                         |
-| -------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| germansl | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1, a taxon reference list for occurrence databases in Germany |
+| Name                        | Data origin | Data source                                                                                                         |
+| --------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| [germansl](./src/germansl/) | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1, a taxon reference list for occurrence databases in Germany |
 
 ## Taxon specific data
 
-| Name                       | Data origin | Data source                                             |
-| -------------------------- | ----------- | ------------------------------------------------------- |
-| ellenberg                  | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
-| fukarekhenker              | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
-| rotelistemv (experimental) | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| Name                                             | Data origin | Data source                                             |
+| ------------------------------------------------ | ----------- | ------------------------------------------------------- |
+| [ellenberg](./src/ellenberg/)                    | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| [fukarekhenker](./src/fukarekhenker/)            | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| [rotelistemv](./src/rotelistemv/) (experimental) | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
 
 ## Occurrence data
 
-| Name   | Data origin | Data source                                               |
-| ------ | ----------- | --------------------------------------------------------- |
-| werbeo | API         | [Flora-MV](https://www.flora-mv.de/) (through WerBeo API) |
+| Name                    | Data origin | Data source                                               |
+| ----------------------- | ----------- | --------------------------------------------------------- |
+| [werbeo](./src/werbeo/) | API         | [Flora-MV](https://www.flora-mv.de/) (through WerBeo API) |
 
 # Developing a local database plugin
 
-You can derive a JSON database for your plugin from a CSV table by using [Floralink Generator](https://github.com/floralink/generator).
+You can derive a JSON database for your plugin from a CSV table by using [Floralink Generator](https://github.com/floralink/generator). Look at the plugins in this library for examples.
 
 Source databases to use with Floralink need to have a taxonomic reference. Floralink uses GermanSL (v1.5.1) and doesn't support other taxonomic reference databases (yet).
 
@@ -57,8 +57,10 @@ Source databases to use with Floralink need to have a taxonomic reference. Flora
 Basic file structure of a local database plugin:
 
 ```
-/sourcedata
-  |__database.csv
+/generation
+  /source
+  |  |__database.csv
+  |  |__LICENSE
   |__mappings.js
 database.json
 index.js

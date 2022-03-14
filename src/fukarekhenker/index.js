@@ -5,8 +5,8 @@ export default {
   sourceType: "local",
   name: "fukarekhenker",
   version: "2006-1",
-  taxonReferencePlugin: {
-    name: "germansl",
+  taxonReference: {
+    id: "germansl",
     version: "1.5.1",
   },
   title: "N-F-T-Status",
