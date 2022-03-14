@@ -1,4 +1,4 @@
-import database from "./database.json";
+import database from "./database.json" assert { type: "json" };
 
 const sharedEnum = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const sharedEnumNominal = ["x", "?"];

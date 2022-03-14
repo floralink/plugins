@@ -1,4 +1,4 @@
-import database from "./database.json";
+import database from "./database.json" assert { type: "json" };
 
 export default {
   pluginType: "taxonreference",
