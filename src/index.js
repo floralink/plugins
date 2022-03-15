@@ -1,12 +1,9 @@
 // taxon reference data plugins
-import germansl from "./germansl";
-
-// occurrence data plugins
-import werbeo from "./werbeo-floramv";
+import germansl from "./taxonreference/germansl";
 
 // taxon specific data plugins
-import ellenberg from "./ellenberg";
-import rotelistemv from "./rotelistemv";
-import fukarekhenker from "./fukarekhenker";
+import ellenberg from "./taxonspecific/ellenberg";
+import rotelistemv from "./taxonspecific/rotelistemv";
+import fukarekhenker from "./taxonspecific/fukarekhenker";
 
-export { germansl, werbeo, ellenberg, rotelistemv, fukarekhenker };
+export { germansl, ellenberg, rotelistemv, fukarekhenker };

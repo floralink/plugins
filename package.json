@@ -1,7 +1,7 @@
 {
   "name": "@floralink/plugins",
-  "version": "0.1.2",
-  "description": "Plugin library for using local databases and APIs as data sources with Floralink Core",
+  "version": "0.2.0",
+  "description": "Plugin library for using taxon specific data with Floralink Core",
   "author": "Vincent Ruge",
   "license": "MIT",
   "main": "src/index.js",
@@ -10,11 +10,7 @@
     "lint": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "axios": "^0.26.0"
-  },
   "devDependencies": {
-    "@floralink/generator": "^1.1.1",
     "eslint": "8.9.0"
   }
 }

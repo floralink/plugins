@@ -1,6 +1,6 @@
 # Plugins for Floralink
 
-Plugin library for using local databases and APIs as data sources with Floralink Core.
+Plugin library for using using taxon specific and taxon reference data with Floralink Core. These contain only descriptive information. For database plugins, see [@floralink/databases](https://github.com/floralink/databases).
 
 - [Plugins for Floralink](#plugins-for-floralink)
 - [General usage](#general-usage)
@@ -14,37 +14,44 @@ Plugin library for using local databases and APIs as data sources with Floralink
 
 # General usage
 
+You can add the plugins to your project by using the [@floralink/plugins](https://npmjs.com/org/floralink/plugins) npm package:
+
+```shell
+$ npm install @floralink/plugins
+```
+
+Then, in your project:
+
 ```javascript
 import * as floralink from "@floralink/core";
-import { myplugin } from "@floralink/plugins";
+import { mytaxonspecificplugin } from "@floralink/plugins";
 
-floralink.initializePlugin(myplugin);
+floralink.initializePlugin(mytaxonspecificplugin);
 
-// example for taxon reference data
-const myTaxonData = floralink.getTaxonDataByID(taxonIDs, "myplugin");
+// now floralink can access information on how to operate the data
 ```
 
 # Plugins in this library
 
 ## Taxon reference data
 
-| Name                        | Data origin | Data source                                                                                                         |
-| --------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| [germansl](./src/germansl/) | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1, a taxon reference list for occurrence databases in Germany |
+| Name     | Description                                                      | Data origin | Data source                                                                                                         |
+| -------- | ---------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| germansl | Taxon reference for plants, mosses, algae and lichens in Germany | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1, a taxon reference list for occurrence databases in Germany |
 
 ## Taxon specific data
 
-| Name                                             | Data origin | Data source                                             |
-| ------------------------------------------------ | ----------- | ------------------------------------------------------- |
-| [ellenberg](./src/ellenberg/)                    | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
-| [fukarekhenker](./src/fukarekhenker/)            | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
-| [rotelistemv](./src/rotelistemv/) (experimental) | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| Name                       | Description                                                                     | Data origin | Data source                                             |
+| -------------------------- | ------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------- |
+| ellenberg                  | Ellenberg indicator values (1991)                                               | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| fukarekhenker              | N, F and T status described by Fukarek & Henker (2006)                          | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
+| rotelistemv (experimental) | Red list classifications for vascular plants in Mecklenburg-Vorpommern, Germany | local       | [GermanSL](https://germansl.infinitenature.org/) v1.5.1 |
 
 ## Occurrence data
 
-| Name                    | Data origin | Data source                                               |
-| ----------------------- | ----------- | --------------------------------------------------------- |
-| [werbeo](./src/werbeo/) | API         | [Flora-MV](https://www.flora-mv.de/) (through WerBeo API) |
+| Name   | Data origin | Data source                                               |
+| ------ | ----------- | --------------------------------------------------------- |
+| werbeo | API         | [Flora-MV](https://www.flora-mv.de/) (through WerBeo API) |
 
 # Developing a local database plugin
 
