@@ -14,7 +14,7 @@ Plugin library for using using taxon specific and taxon reference data with Flor
 
 # General usage
 
-You can add the plugins to your project by using the [@floralink/plugins](https://npmjs.com/org/floralink/plugins) npm package:
+You can add the plugins to your project by using the [@floralink/plugins](https://www.npmjs.com/package/@floralink/plugins) npm package:
 
 ```shell
 $ npm install @floralink/plugins
@@ -101,7 +101,6 @@ export default {
     },
     // ...
   },
-  getDatabase: () => database,
   // applicable filters for calculating statistics
   filters: {
     // the key acts as the id of the filter
