@@ -1,6 +1,6 @@
 {
   "name": "@floralink/plugins",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plugin library for using taxon specific data with Floralink Core",
   "author": "Vincent Ruge",
   "license": "MIT",
