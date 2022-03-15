@@ -33,6 +33,7 @@ export default {
       title: "Gefährdungskategorie Rote Liste MV 1991",
       titleShort: "RL-MV 1991",
       scaleOfMeasure: "nominal",
+      enum: ["0", "1", "2", "3", "4", "D"],
     },
   },
 };
